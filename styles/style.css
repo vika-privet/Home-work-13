@@ -1,0 +1,397 @@
+@import "./normalize.css";
+@import "./fonts.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.top-line {
+  background: #E5E5E5;
+  display: flex;
+  justify-content: center;
+  padding-top: 17px;
+  padding-bottom: 17px;
+}
+
+
+.link {
+  font-size: 14px;
+  line-height: 16px;
+  color: #333333;
+  margin-right: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.link:last-child {
+  margin-right: 0;
+}
+
+.container-header {
+  display: flex;
+}
+
+.logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.dividing-line {
+  border-top: 1px solid #EFEFEF;
+}
+
+.shop-logo {
+  width:258px; 
+  height:80px;
+}
+
+.phone-number {
+  margin-left: auto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  margin-right: 40px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-decoration: none;
+}
+
+.callback-button {
+  display: block;
+  border: 2px solid #F13C6E;
+  border-radius: 40px;
+  padding: 12px 26px 13px 27px;
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.navigation a {
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.navigation a:last-child {
+  margin-right: 0;
+}
+
+.box-image {
+  background: url(../images/Rectangle-2.png);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+.text-box {
+  padding-top: 192px;
+  padding-bottom: 193px;
+  width: 309px;
+}
+
+.text-box h1 {
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.text-box p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+.button-link {
+  display: inline-block;
+  background: #F13C6E;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+  padding: 12px 26px 13px 27px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  background-color: #E5E5E5;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  background-color: white;
+  padding: 25px 30px 25px 30px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h2 {
+  display: block;
+  padding-top: 80px;
+  margin-bottom: 38px;
+  margin-top: 0;
+}
+
+.card-image {
+  width: 125px;
+  height: 166px;
+}
+
+.card p {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #333333;
+  
+}
+
+.card-bt {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 9px 40px 9px 40px;
+  background: #F13C6E;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF
+}
+
+.card_price {
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.blocks {
+  display: flex;
+  margin-top: 100px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F13C6E;
+  margin-right: 30px;
+  padding: 35px 45px 35px 45px;
+}
+
+.block:first-child {
+  align-self: flex-start;
+}
+
+.block-info {
+  width: 250px;
+  margin-right: 65px;
+}
+
+.block-info h3 {
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+.block-info p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding-bottom: 25px;
+}
+
+input {
+  display: block;
+  background: #FFFFFF;
+  border-radius: 30px;
+  border: #FFFFFF;
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+.market-map {
+  background: #F13C6E;
+  border: 2px solid #FFFFFF;
+  border-radius: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 9px 28px 9px 27px;
+}
+
+.secondaty-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.inpuls {
+  background-color: white;
+  outline: 1px solid #EFEFEF;
+  text-align: center;
+  padding: 39px 65px 39px 60px;
+}
+
+.cards.last-block {
+  padding-bottom: 80px;
+}
+
+.popular-categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 140.62%;
+  color: #000000;
+}
+
+.category-title {
+  padding-top: 60px;
+  padding-right: 155px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #EFEFEF;
+  margin-bottom: 25px;
+}
+
+.more-links {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: left;
+  width: 255px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 0;
+}
+
+.more-links a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+  color: #828282;
+  text-decoration: none;
+}
+
+.footer-line {
+  margin-top: 60px;
+  border-top: 1px solid #EFEFEF;
+}
+
+.our-contacts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.social-media button {
+  background: #FFFFFF;
+  border: 2px solid #F13C6E;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.social-media button:last-child {
+  margin-right: 0;
+}
+
+.call-us {
+  display: flex;
+}
+
+.youtube-bt {
+  padding: 11px 9px 11px 10px;
+}
+
+.vk-bt {
+  padding: 11px 7px 10px 6px;
+}
+
+.fb-bt {
+  padding: 9px 15px 8px 15px;
+}
+
+
+.insta-bt {
+  padding: 8px 9px 8px 9px;
+}
+
+.footer {
+  background-color: #EFEFEF;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.privacy-policy {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
+}
+
+.footer a {
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: #828282;
+  text-decoration: none;
+}
