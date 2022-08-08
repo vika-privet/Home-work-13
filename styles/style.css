@@ -19,6 +19,8 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .top-line {
@@ -45,9 +47,9 @@ ul {
 
 .container-header {
   display: flex;
-}
-
-.logo {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -61,15 +63,17 @@ ul {
   height:80px;
 }
 
+.callback {
+  display: flex;
+  align-items: center;
+}
+
 .phone-number {
-  margin-left: auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #000000;
   margin-right: 40px;
-  padding-top: 50px;
-  padding-bottom: 50px;
   text-decoration: none;
 }
 
@@ -77,10 +81,8 @@ ul {
   display: block;
   border: 2px solid #F13C6E;
   border-radius: 40px;
-  padding: 12px 26px 13px 27px;
+  padding: 12px 24px 13px 25px;
   background-color: white;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .navigation {
@@ -120,6 +122,9 @@ ul {
 .text-box h1 {
   font-size: 48px;
   line-height: 56px;
+}
+
+.main-text {
   color: #FFFFFF;
   margin-bottom: 50px;
   margin-top: 0;
@@ -128,9 +133,6 @@ ul {
 .text-box p {
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
-  margin-bottom: 50px;
-  margin-top: 0;
 }
 
 .button-link {
@@ -151,6 +153,10 @@ main {
   background-color: #E5E5E5;
 }
 
+.main-article {
+  padding-top: 80px;
+}
+
 .cards {
   display: flex;
   gap: 30px;
@@ -167,7 +173,6 @@ main {
 
 h2 {
   display: block;
-  padding-top: 80px;
   margin-bottom: 38px;
   margin-top: 0;
 }
@@ -219,7 +224,11 @@ h2 {
   align-items: center;
   background-color: #F13C6E;
   margin-right: 30px;
-  padding: 35px 45px 35px 45px;
+  padding: 35px 42px 35px 43px;
+}
+
+.block:last-child {
+  margin-right: 0;
 }
 
 .block:first-child {
@@ -231,18 +240,25 @@ h2 {
   margin-right: 65px;
 }
 
+.block-info.left-form {
+  width: 172px;
+  margin-right: 95px;
+}
+
+.block-text {
+  color: #FFFFFF;
+  padding-bottom: 25px;
+  margin: 0;
+}
+
 .block-info h3 {
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
-  padding-bottom: 25px;
 }
 
 .block-info p {
   font-size: 14px;
   line-height: 20px;
-  color: #FFFFFF;
-  padding-bottom: 25px;
 }
 
 input {
@@ -252,11 +268,12 @@ input {
   border: #FFFFFF;
   width: 100%;
   padding-left: 25px;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .market-map {
+  display: inline-block;
   background: #F13C6E;
   border: 2px solid #FFFFFF;
   border-radius: 30px;
@@ -265,7 +282,7 @@ input {
   text-align: center;
   text-decoration: none;
   color: #FFFFFF;
-  padding: 9px 28px 9px 27px;
+  padding: 8px 26px 8px 25px;
 }
 
 .secondaty-link {
@@ -279,7 +296,7 @@ input {
   background-color: white;
   outline: 1px solid #EFEFEF;
   text-align: center;
-  padding: 39px 65px 39px 60px;
+  padding: 39px 65px 39px 62px;
 }
 
 .cards.last-block {
@@ -289,6 +306,7 @@ input {
 .popular-categories {
   display: flex;
   justify-content: space-around;
+  padding-top: 60px;
 }
 
 h3 {
@@ -298,7 +316,6 @@ h3 {
 }
 
 .category-title {
-  padding-top: 60px;
   padding-right: 155px;
   padding-bottom: 30px;
   border-bottom: 1px solid #EFEFEF;
@@ -311,11 +328,6 @@ h3 {
   flex-direction: column;
   text-align: left;
   width: 255px;
-}
-
-ul {
-  padding: 0;
-  margin-top: 0;
 }
 
 .more-links a {
@@ -336,21 +348,26 @@ ul {
   justify-content: space-between;
   flex-wrap: nowrap;
   align-items: center;
+  padding-top: 37px;
+  padding-bottom: 38px;
 }
 
-.social-media button {
+.social-media a {
+  display: inline-block;
   background: #FFFFFF;
   border: 2px solid #F13C6E;
   border-radius: 50%;
   margin-right: 20px;
+  text-decoration: none;
 }
 
-.social-media button:last-child {
+.social-media a:last-child {
   margin-right: 0;
 }
 
 .call-us {
   display: flex;
+  align-items: center;
 }
 
 .youtube-bt {
@@ -374,6 +391,9 @@ ul {
   background-color: #EFEFEF;
   padding-top: 25px;
   padding-bottom: 25px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #828282;
 }
 
 .privacy-policy {
@@ -382,16 +402,9 @@ ul {
   align-items: center;
 }
 
-.footer p {
-  font-size: 12px;
-  line-height: 14px;
-  color: #828282;
-}
 
 .footer a {
-  font-size: 12px;
-  line-height: 14px;
   text-align: right;
-  color: #828282;
   text-decoration: none;
+  color: #828282;
 }
